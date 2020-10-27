@@ -1,5 +1,5 @@
 <template lang="html">
-	<form id="sightings-form" v-on:submit="addNewBird">
+	<form id="sightings-form" v-on:submit.prevent="addNewBird">
 		<h2>Add a Sighting</h2>
 		<div class="formWrap">
 			<label for="species">Species:</label>

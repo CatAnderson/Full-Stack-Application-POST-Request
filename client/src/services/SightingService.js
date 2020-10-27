@@ -7,7 +7,7 @@ export default {
   },
   
   addBird(payload){
-    return fetch(baseUrl, {
+    return fetch(baseURL, {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: { 'Content-Type': 'application/json'}

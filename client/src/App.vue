@@ -27,7 +27,7 @@ export default {
 
     eventBus.$on('add-bird', bird => {
       SightingService.addBird(bird)
-        .then(sightings => this.sightings.push(bird))
+        .then(sighting => this.sightings.push(bird))
     })
   },
   methods: {
