@@ -25,9 +25,9 @@ export default {
 	mounted() {
     this.fetchSightings();
 
-    eventBus.$on('add-bird', (bird) => {
+    eventBus.$on('add-bird', bird => {
       SightingService.addBird(bird)
-      .then(this.sightings.push(bird))
+        .then(sightings => this.sightings.push(bird))
     })
   },
   methods: {
